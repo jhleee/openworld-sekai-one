@@ -3,12 +3,12 @@
   "status": "ready",
   "goal": "사헬 우물 공동 정비일의 독립 문서를 작성한다. 기존 규칙과 지리를 유지한다.",
   "allowed_paths": [
-    "world/records/LOC-WELL-DAY.json",
-    "world/wiki/LOC-WELL-DAY.md"
+    "world/records/CUL-WELL-DAY.json",
+    "world/wiki/CUL-WELL-DAY.md"
   ],
   "required_paths": [
-    "world/records/LOC-WELL-DAY.json",
-    "world/wiki/LOC-WELL-DAY.md"
+    "world/records/CUL-WELL-DAY.json",
+    "world/wiki/CUL-WELL-DAY.md"
   ],
   "evidence_ids": [
     "LOC-SAHEL",
@@ -21,5 +21,8 @@
     "기존 규칙 유지",
     "검토 영수증",
     "정사 반영 확인"
-  ]
+  ],
+  "expected_kinds": {
+    "CUL-WELL-DAY": "Culture"
+  }
 }

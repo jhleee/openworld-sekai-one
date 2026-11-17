@@ -3,12 +3,12 @@
   "status": "ready",
   "goal": "벨수 장례와 잔향 처리의 독립 문서를 작성한다. 기존 규칙과 지리를 유지한다.",
   "allowed_paths": [
-    "world/records/LOC-FUNERAL.json",
-    "world/wiki/LOC-FUNERAL.md"
+    "world/records/CUL-FUNERAL.json",
+    "world/wiki/CUL-FUNERAL.md"
   ],
   "required_paths": [
-    "world/records/LOC-FUNERAL.json",
-    "world/wiki/LOC-FUNERAL.md"
+    "world/records/CUL-FUNERAL.json",
+    "world/wiki/CUL-FUNERAL.md"
   ],
   "evidence_ids": [
     "LOC-VELSU",
@@ -20,5 +20,8 @@
     "기존 규칙 유지",
     "검토 영수증",
     "정사 반영 확인"
-  ]
+  ],
+  "expected_kinds": {
+    "CUL-FUNERAL": "Culture"
+  }
 }

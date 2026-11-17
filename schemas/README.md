@@ -21,3 +21,5 @@ Claim: truth true/false/undecided 문자열. Belief: holder ID와 claim Claim ID
 검토: role canon/knowledge/wiki, verdict approve/revise/reject, findings:[severity blocker/warning,ids,reason,evidence,suggestion]. 영수증: base_commit,world_digest,votes,created_at,model,signature.
 
 작업 field_limits는 경로별 허용 메타데이터 키 목록이다. 지정하면 나머지 필드와 Markdown 본문 변경을 차단한다. 생성자가 임의로 추가하는 옵션이 아니라 운영자 작업 계약이다.
+
+Culture는 장소와 구별하는 반복 관습·생활 문화다. 작업 expected_kinds는 ID별 요구 유형이며 본문이 있어도 유형이 다르면 재작성한다.

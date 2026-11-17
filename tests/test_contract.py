@@ -83,3 +83,14 @@ class FieldScope(unittest.TestCase):
    root=pathlib.Path(td);p=root/'world/records/test.json';p.parent.mkdir(parents=True);p.write_text('{"id":"A","name":"old"}')
    with self.assertRaises(ValueError):apply_files(root,[{'path':'world/records/test.json','content':'{"id":"B","name":"new"}'}],['world/records/test.json'],{'world/records/test.json':['name']})
    self.assertEqual(json.loads(p.read_text())['id'],'A')
+
+class TaskRequirements(unittest.TestCase):
+ def test_culture_not_place(self):
+  from agent_loop import task_errors
+  with tempfile.TemporaryDirectory() as td:
+   root=pathlib.Path(td);p=root/'world/records/CUL-X.json';p.parent.mkdir(parents=True);p.write_text('{"id":"CUL-X","kind":"Place"}')
+   self.assertTrue(task_errors({'expected_kinds':{'CUL-X':'Culture'}},root))
+   p.write_text('{"id":"CUL-X","kind":"Culture"}');self.assertEqual(task_errors({'expected_kinds':{'CUL-X':'Culture'}},root),[])
+ def test_required_article(self):
+  from agent_loop import task_errors
+  with tempfile.TemporaryDirectory() as td:self.assertTrue(task_errors({'required_paths':['world/wiki/CUL-X.md']},pathlib.Path(td)))

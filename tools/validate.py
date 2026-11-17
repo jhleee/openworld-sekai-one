@@ -1,7 +1,7 @@
 """Deterministic repository checks. Python 3.11+, no external packages."""
 import argparse,json,re,pathlib,sys
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-KINDS={'Rule','Place','Event','Organization','Character','Power','Spirit','SacredBeast','Monster','Item','Claim','Thread','Fact','Belief'}
+KINDS={'Rule','Place','Event','Organization','Character','Power','Spirit','SacredBeast','Monster','Item','Claim','Thread','Fact','Belief','Culture'}
 def frontmatter(path):
  text=path.read_text(encoding='utf-8');m=re.match(r'^---\n(.*?)\n---\n(.*)$',text,re.S)
  if not m:raise ValueError('missing JSON-value frontmatter')
