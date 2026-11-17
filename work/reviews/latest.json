@@ -1,34 +1,34 @@
 {
-  "task": "LONG-terra-02",
-  "base_commit": "c6c7c2139f536bbfd25893e682c7046a07538a5f",
-  "world_digest": "f498b3f9f663413f785dbadda9c504d7ce973b3656e194cc080d77e88c70f267",
+  "task": "LONG-terra-03",
+  "base_commit": "4743934ae64068de9e4143436dcae0661fca8212",
+  "world_digest": "bbad7e5e8ff23d104b2e88b073d0ecd510026bdd7ad00cc2663f88720bfb6881",
   "votes": [
     {
       "role": "canon",
       "verdict": "approve",
-      "summary": "cycle-02: 기준 c6c7c2139f536bbfd25893e682c7046a07538a5f와 필수 근거 및 신규 기록·위키를 대조한 결과, 시간·생존·비용·주장의 불확실성에 차단할 정사 충돌이 없다.",
+      "summary": "cycle-03의 신규 기록 여섯 건과 관련 근거를 대조한 결과 정사 충돌을 발견하지 못했다. 재측량의 원인과 가호 계약은 미확정으로 유지된다.",
       "findings": []
     },
     {
       "role": "knowledge",
       "verdict": "approve",
-      "summary": "cycle-02의 신규 기록과 위키 및 관련 변경을 기준 기록과 대조했으며, 확정 사실과 미정 채무 주장을 구분하고 실질적인 지식 충돌을 발견하지 못했다.",
+      "summary": "cycle-03의 신규 기록과 위키 여섯 쌍을 기준 커밋의 관련 근거와 대조했다. 경계의 원인과 가호 계약의 성립 여부를 미확정으로 유지하며 지식 관점의 실질적 결함은 발견하지 못했다.",
       "findings": []
     },
     {
       "role": "wiki",
       "verdict": "approve",
-      "summary": "cycle-02의 필수 위키 본문과 기록, 기존 변경 및 지정 근거를 기준 커밋과 대조했으며 실질적인 불일치나 중복을 발견하지 못했다.",
+      "summary": "cycle-03의 신규 위키 6건과 대응 기록, 필수 근거 및 색인을 검토했으며 실질적인 위키 결함을 발견하지 못했다. 본문은 기록의 세부 내용과 일치하고 미확인 경계설과 가호 협상의 미결 상태를 유지한다.",
       "findings": []
     }
   ],
-  "created_at": 1794952124.4584746,
+  "created_at": 1794952295.616423,
   "model": "terra with independent Terra/Sol council",
   "reviewer_agents": {
-    "canon": "/root/terra_budget/terra02_canon_retry",
-    "knowledge": "/root/terra_budget/terra02_knowledge_retry",
-    "wiki": "/root/terra_budget/terra02_wiki_retry"
+    "canon": "/root/terra_budget/terra03_canon",
+    "knowledge": "/root/terra_budget/terra03_knowledge",
+    "wiki": "/root/terra_budget/terra03_wiki"
   },
   "signature_source": "root operator after real subagent reviews",
-  "signature": "8ea5c1b9709292dfb284cf249c54fa0458c81a0f4ce34ba3dad76b67a36b2f30"
+  "signature": "5981821d49fb4743a8b91fa3eff6f6c17d1f4bcffa552d8fead2c428c1ee032d"
 }

@@ -1,9 +1,9 @@
 # 분류 색인
 
-- [Character (15)](Character.md)
-- [Claim (3)](Claim.md)
-- [Culture (1)](Culture.md)
-- [Event (5)](Event.md)
+- [Character (16)](Character.md)
+- [Claim (4)](Claim.md)
+- [Culture (3)](Culture.md)
+- [Event (6)](Event.md)
 - [Item (4)](Item.md)
 - [Monster (3)](Monster.md)
 - [Organization (8)](Organization.md)
@@ -12,5 +12,5 @@
 - [Rule (5)](Rule.md)
 - [SacredBeast (2)](SacredBeast.md)
 - [Spirit (3)](Spirit.md)
-- [Thread (2)](Thread.md)
+- [Thread (3)](Thread.md)
 - [연표](timeline.md)
