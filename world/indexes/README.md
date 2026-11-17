@@ -1,12 +1,12 @@
 # 분류 색인
 
-- [Character (12)](Character.md)
-- [Claim (2)](Claim.md)
+- [Character (15)](Character.md)
+- [Claim (3)](Claim.md)
 - [Culture (1)](Culture.md)
-- [Event (4)](Event.md)
+- [Event (5)](Event.md)
 - [Item (4)](Item.md)
 - [Monster (3)](Monster.md)
-- [Organization (7)](Organization.md)
+- [Organization (8)](Organization.md)
 - [Place (8)](Place.md)
 - [Power (2)](Power.md)
 - [Rule (5)](Rule.md)
