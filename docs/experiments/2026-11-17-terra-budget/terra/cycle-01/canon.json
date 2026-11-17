@@ -1,0 +1,6 @@
+{
+  "role": "canon",
+  "verdict": "approve",
+  "summary": "CUL-VELSU-DRILL과 LOC-VELSU-STORE 및 각 위키를 기준 커밋 8b9a62d560104750f14e2db040b90393d559bacf, 헌장, LOC-VELSU·ORG-FERRY·NPC-TOMA·EVT-FLOOD·SPI-NEM과 대조했다. 반복 훈련은 Culture, 장비창고는 Place로 구별된다. 기존 공동 창고와 비가호 훈련을 구체화하며, 연맹의 구조 배정 권한과 토마의 생계 요구를 보존한다. 훈련 관습은 307년 희생자를 기억하되 사건의 날짜·인명 수·사망 상태를 변경하지 않는다. 장비 소모·기금 부족·노동 손실을 명시하고 가호 응답을 필수로 만들지 않아 비용 및 능력 규칙과 충돌하지 않는다. python -B tools/validate.py --json 실제 실행 결과 기록 55개·본문 55개·오류 0개, 기존 문서 키워드 경고 5개다. 검토한 변경에서 정사상 미해결 결함을 찾지 못했다.",
+  "findings": []
+}

@@ -1,0 +1,174 @@
+{
+  "lane": "terra",
+  "cycle": 2,
+  "base_commit": "c6c7c2139f536bbfd25893e682c7046a07538a5f",
+  "world_digest": "f498b3f9f663413f785dbadda9c504d7ce973b3656e194cc080d77e88c70f267",
+  "changed_paths": [
+    "world/indexes/Character.md",
+    "world/indexes/Claim.md",
+    "world/indexes/Event.md",
+    "world/indexes/Organization.md",
+    "world/indexes/README.md",
+    "world/indexes/timeline.md",
+    "world/records/CLM-ORVAN-DEBT.json",
+    "world/records/CUL-VELSU-DRILL.json",
+    "world/records/EVT-ORVAN-REPAIR.json",
+    "world/records/LOC-VELSU-STORE.json",
+    "world/records/NPC-DAON.json",
+    "world/records/NPC-HARIN.json",
+    "world/records/NPC-YURI.json",
+    "world/records/ORG-KARD-VENT.json",
+    "world/wiki/CLM-ORVAN-DEBT.md",
+    "world/wiki/CUL-VELSU-DRILL.md",
+    "world/wiki/EVT-ORVAN-REPAIR.md",
+    "world/wiki/LOC-VELSU-STORE.md",
+    "world/wiki/NPC-DAON.md",
+    "world/wiki/NPC-HARIN.md",
+    "world/wiki/NPC-YURI.md",
+    "world/wiki/ORG-KARD-VENT.md"
+  ],
+  "votes": [
+    {
+      "role": "canon",
+      "verdict": "approve",
+      "summary": "cycle-02: 기준 c6c7c2139f536bbfd25893e682c7046a07538a5f와 필수 근거 및 신규 기록·위키를 대조한 결과, 시간·생존·비용·주장의 불확실성에 차단할 정사 충돌이 없다.",
+      "findings": []
+    },
+    {
+      "role": "knowledge",
+      "verdict": "approve",
+      "summary": "cycle-02의 신규 기록과 위키 및 관련 변경을 기준 기록과 대조했으며, 확정 사실과 미정 채무 주장을 구분하고 실질적인 지식 충돌을 발견하지 못했다.",
+      "findings": []
+    },
+    {
+      "role": "wiki",
+      "verdict": "approve",
+      "summary": "cycle-02의 필수 위키 본문과 기록, 기존 변경 및 지정 근거를 기준 커밋과 대조했으며 실질적인 불일치나 중복을 발견하지 못했다.",
+      "findings": []
+    }
+  ],
+  "reviewer_agents": {
+    "canon": "/root/terra_budget/terra02_canon_retry",
+    "knowledge": "/root/terra_budget/terra02_knowledge_retry",
+    "wiki": "/root/terra_budget/terra02_wiki_retry"
+  },
+  "attempts": 2,
+  "static_report": {
+    "validate": "/workspace/arken-long-results/terra/cycle-02/validate.json",
+    "index_check": "pass"
+  },
+  "goal": "벨수 노동자와 조카, 카르드 환기갱 조직, 오르반 정비와 채무 사건 및 주장",
+  "subtasks": [
+    {
+      "id": "02-1",
+      "goal": "벨수 노동자와 조카",
+      "evidence_ids": [
+        "LOC-VELSU",
+        "ORG-FERRY",
+        "NPC-TOMA",
+        "CUL-VELSU-DRILL",
+        "LOC-VELSU-STORE"
+      ],
+      "required_paths": [
+        "world/records/NPC-DAON.json",
+        "world/wiki/NPC-DAON.md",
+        "world/records/NPC-YURI.json",
+        "world/wiki/NPC-YURI.md"
+      ],
+      "allowed_paths": [
+        "world/records/NPC-DAON.json",
+        "world/wiki/NPC-DAON.md",
+        "world/records/NPC-YURI.json",
+        "world/wiki/NPC-YURI.md",
+        "world/records/CUL-VELSU-DRILL.json",
+        "world/wiki/CUL-VELSU-DRILL.md",
+        "world/records/LOC-VELSU-STORE.json",
+        "world/wiki/LOC-VELSU-STORE.md"
+      ]
+    },
+    {
+      "id": "02-2",
+      "goal": "카르드 환기갱 인물과 조직",
+      "evidence_ids": [
+        "LOC-KARD",
+        "NPC-BREN",
+        "HERO-ORVAN"
+      ],
+      "required_paths": [
+        "world/records/NPC-HARIN.json",
+        "world/wiki/NPC-HARIN.md",
+        "world/records/ORG-KARD-VENT.json",
+        "world/wiki/ORG-KARD-VENT.md"
+      ],
+      "allowed_paths": [
+        "world/records/NPC-HARIN.json",
+        "world/wiki/NPC-HARIN.md",
+        "world/records/ORG-KARD-VENT.json",
+        "world/wiki/ORG-KARD-VENT.md"
+      ]
+    },
+    {
+      "id": "02-3",
+      "goal": "오르반 정비와 채무 사건 및 주장",
+      "evidence_ids": [
+        "HERO-ORVAN",
+        "NPC-BREN",
+        "LOC-KARD",
+        "ITM-BASTION"
+      ],
+      "required_paths": [
+        "world/records/EVT-ORVAN-REPAIR.json",
+        "world/wiki/EVT-ORVAN-REPAIR.md",
+        "world/records/CLM-ORVAN-DEBT.json",
+        "world/wiki/CLM-ORVAN-DEBT.md"
+      ],
+      "allowed_paths": [
+        "world/records/EVT-ORVAN-REPAIR.json",
+        "world/wiki/EVT-ORVAN-REPAIR.md",
+        "world/records/CLM-ORVAN-DEBT.json",
+        "world/wiki/CLM-ORVAN-DEBT.md"
+      ]
+    }
+  ],
+  "scope_correction": {
+    "count": 1,
+    "reason": "index.py가 기록과 위키 변경에서 자동 생성하는 분류 및 연표 색인을 명시",
+    "original_blocker": "wiki.json"
+  },
+  "initial_blocker": "/workspace/arken-long-results/terra/cycle-02/wiki.json",
+  "sealed_commit": "4743934ae64068de9e4143436dcae0661fca8212",
+  "sealed_at": 1794952124.4874794,
+  "static_verified": {
+    "records": 61,
+    "articles": 61,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/BEA-HART.md",
+        "word": "최초"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-ASH.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-SIA.md",
+        "word": "영원"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-BLESSING.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-MAGIC.md",
+        "word": "무한"
+      }
+    ]
+  },
+  "status": "sealed_experiment"
+}

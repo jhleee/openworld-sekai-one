@@ -1,0 +1,14 @@
+{
+  "role": "wiki",
+  "verdict": "revise",
+  "summary": "cycle-02의 필수 기록과 실제 위키 본문, 지정 근거와 중복 여부를 검토했고 validate 및 색인 검사는 통과했다. 다만 변경된 색인 여섯 파일이 작업의 허용 경로 밖에 있어 제출 범위를 수정해야 한다.",
+  "findings": [
+    {
+      "severity": "blocker",
+      "ids": ["NPC-DAON", "NPC-YURI", "NPC-HARIN", "ORG-KARD-VENT", "EVT-ORVAN-REPAIR", "CLM-ORVAN-DEBT"],
+      "reason": "작업 JSON의 세 allowed_paths에 없는 색인 파일 여섯 개가 기준 커밋 대비 변경되어 M-07의 경로 제한을 위반한다.",
+      "evidence": "AGENTS.md M-07: 'allowed_paths 밖을 수정하지 않는다'; git diff에는 world/indexes/Character.md, Claim.md, Event.md, Organization.md, README.md, timeline.md 변경이 나타난다.",
+      "suggestion": "작업 계약에 명시된 허용 범위로 제출을 되돌리거나, 운영자가 색인 생성 경로를 허용하는 수정된 작업 계약을 제공한 뒤 다시 검토한다."
+    }
+  ]
+}

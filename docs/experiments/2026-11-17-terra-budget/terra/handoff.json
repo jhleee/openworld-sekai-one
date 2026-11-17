@@ -1,0 +1,21 @@
+{
+  "cycles": [
+    2,
+    3,
+    4
+  ],
+  "subtasks": 9,
+  "new_articles": 18,
+  "final_commit": "3102fb267081b2caec172fcbde19cfddcaa71aa6",
+  "total_articles": 73,
+  "static_errors": 0,
+  "static_warnings": 6,
+  "review_calls": 15,
+  "review_sets": 5,
+  "scope_corrections": 1,
+  "pre_review_static_corrections": 1,
+  "unresolved": "동일 연도 선후의 구조화 제약 미지원 및 생성 연표 역순; 본문 순서 유지, 도구 개선 필요",
+  "elapsed": "별도 계측되지 않음",
+  "tokens": "미계측",
+  "completed_at": "2026-11-17T21:57:35.844105+00:00"
+}

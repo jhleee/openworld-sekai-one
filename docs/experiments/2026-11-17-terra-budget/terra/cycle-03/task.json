@@ -1,0 +1,108 @@
+{
+  "id": "cycle-03",
+  "base_commit": "4743934ae64068de9e4143436dcae0661fca8212",
+  "goal": "무음림의 생활과 경계 분쟁, 가호 협상",
+  "subtask_count": 3,
+  "subtasks": [
+    {
+      "id": "03-1",
+      "goal": "약초 교환과 장례",
+      "evidence_ids": [
+        "LOC-HUSH",
+        "ORG-HUSH",
+        "SPI-ASH",
+        "SYS-DEATH"
+      ],
+      "required_paths": [
+        "world/records/CUL-HUSH-BARTER.json",
+        "world/wiki/CUL-HUSH-BARTER.md",
+        "world/records/CUL-HUSH-FUNERAL.json",
+        "world/wiki/CUL-HUSH-FUNERAL.md"
+      ],
+      "allowed_paths": [
+        "world/records/CUL-HUSH-BARTER.json",
+        "world/wiki/CUL-HUSH-BARTER.md",
+        "world/records/CUL-HUSH-FUNERAL.json",
+        "world/wiki/CUL-HUSH-FUNERAL.md"
+      ]
+    },
+    {
+      "id": "03-2",
+      "goal": "측량과 기억의 불일치",
+      "evidence_ids": [
+        "EVT-HUSH-SURVEY",
+        "LOC-HUSH",
+        "NPC-MIRA",
+        "ORG-HUSH",
+        "SPI-ASH"
+      ],
+      "required_paths": [
+        "world/records/EVT-HUSH-SURVEY.json",
+        "world/wiki/EVT-HUSH-SURVEY.md",
+        "world/records/CLM-HUSH-BOUNDARY.json",
+        "world/wiki/CLM-HUSH-BOUNDARY.md"
+      ],
+      "allowed_paths": [
+        "world/records/EVT-HUSH-SURVEY.json",
+        "world/wiki/EVT-HUSH-SURVEY.md",
+        "world/records/CLM-HUSH-BOUNDARY.json",
+        "world/wiki/CLM-HUSH-BOUNDARY.md"
+      ]
+    },
+    {
+      "id": "03-3",
+      "goal": "인물과 가호 협상",
+      "evidence_ids": [
+        "CUL-HUSH-BARTER",
+        "EVT-HUSH-SURVEY",
+        "LOC-HUSH",
+        "NPC-SOLI",
+        "ORG-HUSH",
+        "SPI-ASH",
+        "SYS-BLESSING"
+      ],
+      "required_paths": [
+        "world/records/NPC-SOLI.json",
+        "world/wiki/NPC-SOLI.md",
+        "world/records/THR-HUSH-BLESSING.json",
+        "world/wiki/THR-HUSH-BLESSING.md"
+      ],
+      "allowed_paths": [
+        "world/records/NPC-SOLI.json",
+        "world/wiki/NPC-SOLI.md",
+        "world/records/THR-HUSH-BLESSING.json",
+        "world/wiki/THR-HUSH-BLESSING.md"
+      ]
+    }
+  ],
+  "derived_paths": [
+    "world/indexes/Character.md",
+    "world/indexes/Claim.md",
+    "world/indexes/Culture.md",
+    "world/indexes/Event.md",
+    "world/indexes/README.md",
+    "world/indexes/Thread.md",
+    "world/indexes/timeline.md"
+  ],
+  "allowed_paths": [
+    "world/records/CUL-HUSH-BARTER.json",
+    "world/wiki/CUL-HUSH-BARTER.md",
+    "world/records/CUL-HUSH-FUNERAL.json",
+    "world/wiki/CUL-HUSH-FUNERAL.md",
+    "world/records/EVT-HUSH-SURVEY.json",
+    "world/wiki/EVT-HUSH-SURVEY.md",
+    "world/records/CLM-HUSH-BOUNDARY.json",
+    "world/wiki/CLM-HUSH-BOUNDARY.md",
+    "world/records/NPC-SOLI.json",
+    "world/wiki/NPC-SOLI.md",
+    "world/records/THR-HUSH-BLESSING.json",
+    "world/wiki/THR-HUSH-BLESSING.md",
+    "world/indexes/Character.md",
+    "world/indexes/Claim.md",
+    "world/indexes/Culture.md",
+    "world/indexes/Event.md",
+    "world/indexes/README.md",
+    "world/indexes/Thread.md",
+    "world/indexes/timeline.md"
+  ]
+}

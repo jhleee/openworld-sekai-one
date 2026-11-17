@@ -1,0 +1,171 @@
+{
+  "lane": "terra",
+  "cycle": 3,
+  "base_commit": "4743934ae64068de9e4143436dcae0661fca8212",
+  "world_digest": "bbad7e5e8ff23d104b2e88b073d0ecd510026bdd7ad00cc2663f88720bfb6881",
+  "changed_paths": [
+    "world/indexes/Character.md",
+    "world/indexes/Claim.md",
+    "world/indexes/Culture.md",
+    "world/indexes/Event.md",
+    "world/indexes/README.md",
+    "world/indexes/Thread.md",
+    "world/indexes/timeline.md",
+    "world/records/CLM-HUSH-BOUNDARY.json",
+    "world/records/CUL-HUSH-BARTER.json",
+    "world/records/CUL-HUSH-FUNERAL.json",
+    "world/records/EVT-HUSH-SURVEY.json",
+    "world/records/NPC-SOLI.json",
+    "world/records/THR-HUSH-BLESSING.json",
+    "world/wiki/CLM-HUSH-BOUNDARY.md",
+    "world/wiki/CUL-HUSH-BARTER.md",
+    "world/wiki/CUL-HUSH-FUNERAL.md",
+    "world/wiki/EVT-HUSH-SURVEY.md",
+    "world/wiki/NPC-SOLI.md",
+    "world/wiki/THR-HUSH-BLESSING.md"
+  ],
+  "votes": [
+    {
+      "role": "canon",
+      "verdict": "approve",
+      "summary": "cycle-03의 신규 기록 여섯 건과 관련 근거를 대조한 결과 정사 충돌을 발견하지 못했다. 재측량의 원인과 가호 계약은 미확정으로 유지된다.",
+      "findings": []
+    },
+    {
+      "role": "knowledge",
+      "verdict": "approve",
+      "summary": "cycle-03의 신규 기록과 위키 여섯 쌍을 기준 커밋의 관련 근거와 대조했다. 경계의 원인과 가호 계약의 성립 여부를 미확정으로 유지하며 지식 관점의 실질적 결함은 발견하지 못했다.",
+      "findings": []
+    },
+    {
+      "role": "wiki",
+      "verdict": "approve",
+      "summary": "cycle-03의 신규 위키 6건과 대응 기록, 필수 근거 및 색인을 검토했으며 실질적인 위키 결함을 발견하지 못했다. 본문은 기록의 세부 내용과 일치하고 미확인 경계설과 가호 협상의 미결 상태를 유지한다.",
+      "findings": []
+    }
+  ],
+  "reviewer_agents": {
+    "canon": "/root/terra_budget/terra03_canon",
+    "knowledge": "/root/terra_budget/terra03_knowledge",
+    "wiki": "/root/terra_budget/terra03_wiki"
+  },
+  "attempts": 1,
+  "static_report": {
+    "validate": "/workspace/arken-long-results/terra/cycle-03/static-3-validate.py.txt",
+    "index_check": "pass",
+    "per_subtask": "static-1/2/3"
+  },
+  "goal": "무음림의 생활과 경계 분쟁, 가호 협상",
+  "subtasks": [
+    {
+      "id": "03-1",
+      "goal": "약초 교환과 장례",
+      "evidence_ids": [
+        "LOC-HUSH",
+        "ORG-HUSH",
+        "SPI-ASH",
+        "SYS-DEATH"
+      ],
+      "required_paths": [
+        "world/records/CUL-HUSH-BARTER.json",
+        "world/wiki/CUL-HUSH-BARTER.md",
+        "world/records/CUL-HUSH-FUNERAL.json",
+        "world/wiki/CUL-HUSH-FUNERAL.md"
+      ],
+      "allowed_paths": [
+        "world/records/CUL-HUSH-BARTER.json",
+        "world/wiki/CUL-HUSH-BARTER.md",
+        "world/records/CUL-HUSH-FUNERAL.json",
+        "world/wiki/CUL-HUSH-FUNERAL.md"
+      ]
+    },
+    {
+      "id": "03-2",
+      "goal": "측량과 기억의 불일치",
+      "evidence_ids": [
+        "EVT-HUSH-SURVEY",
+        "LOC-HUSH",
+        "NPC-MIRA",
+        "ORG-HUSH",
+        "SPI-ASH"
+      ],
+      "required_paths": [
+        "world/records/EVT-HUSH-SURVEY.json",
+        "world/wiki/EVT-HUSH-SURVEY.md",
+        "world/records/CLM-HUSH-BOUNDARY.json",
+        "world/wiki/CLM-HUSH-BOUNDARY.md"
+      ],
+      "allowed_paths": [
+        "world/records/EVT-HUSH-SURVEY.json",
+        "world/wiki/EVT-HUSH-SURVEY.md",
+        "world/records/CLM-HUSH-BOUNDARY.json",
+        "world/wiki/CLM-HUSH-BOUNDARY.md"
+      ]
+    },
+    {
+      "id": "03-3",
+      "goal": "인물과 가호 협상",
+      "evidence_ids": [
+        "CUL-HUSH-BARTER",
+        "EVT-HUSH-SURVEY",
+        "LOC-HUSH",
+        "NPC-SOLI",
+        "ORG-HUSH",
+        "SPI-ASH",
+        "SYS-BLESSING"
+      ],
+      "required_paths": [
+        "world/records/NPC-SOLI.json",
+        "world/wiki/NPC-SOLI.md",
+        "world/records/THR-HUSH-BLESSING.json",
+        "world/wiki/THR-HUSH-BLESSING.md"
+      ],
+      "allowed_paths": [
+        "world/records/NPC-SOLI.json",
+        "world/wiki/NPC-SOLI.md",
+        "world/records/THR-HUSH-BLESSING.json",
+        "world/wiki/THR-HUSH-BLESSING.md"
+      ]
+    }
+  ],
+  "sealed_commit": "829f7a860ac5e117bfec45626717b6e51f173f01",
+  "sealed_at": 1794952295.6416597,
+  "static_verified": {
+    "records": 67,
+    "articles": 67,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/BEA-HART.md",
+        "word": "최초"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/CLM-HUSH-BOUNDARY.md",
+        "word": "미확인"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-ASH.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-SIA.md",
+        "word": "영원"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-BLESSING.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-MAGIC.md",
+        "word": "무한"
+      }
+    ]
+  },
+  "status": "sealed_experiment"
+}

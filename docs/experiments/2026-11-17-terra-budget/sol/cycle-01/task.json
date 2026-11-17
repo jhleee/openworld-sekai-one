@@ -1,0 +1,21 @@
+{
+  "id": "SOL-LONG-01",
+  "authority": "root delegated explicit user experiment",
+  "goal": "사헬 우물 공동 정비일 Culture+장소",
+  "allowed_paths": [
+    "world/records/CUL-WELL-DAY.json",
+    "world/wiki/CUL-WELL-DAY.md",
+    "world/records/LOC-SURI-WELL.json",
+    "world/wiki/LOC-SURI-WELL.md",
+    "world/indexes/Culture.md",
+    "world/indexes/Place.md",
+    "world/indexes/README.md"
+  ],
+  "evidence_ids": [
+    "LOC-SAHEL",
+    "NPC-SURI",
+    "NPC-VARKA",
+    "THR-WATER"
+  ],
+  "base_commit": "8b9a62d560104750f14e2db040b90393d559bacf"
+}

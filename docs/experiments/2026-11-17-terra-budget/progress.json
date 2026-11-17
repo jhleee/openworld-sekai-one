@@ -1,0 +1,110 @@
+{
+  "terra": {
+    "records": 73,
+    "articles": 73,
+    "kinds": {
+      "Monster": 3,
+      "Claim": 4,
+      "Character": 16,
+      "Event": 8,
+      "Item": 4,
+      "Spirit": 3,
+      "Organization": 9,
+      "Culture": 4,
+      "Place": 8,
+      "Thread": 5,
+      "Rule": 5,
+      "Power": 2,
+      "SacredBeast": 2
+    },
+    "article_chars": 48394,
+    "reference_edges": 220,
+    "cycles": [
+      {
+        "cycle": 1,
+        "goal": "벨수 공동 구조 훈련과 장비창고 Culture+Place",
+        "status": "sealed_experiment",
+        "sealed_commit": "c6c7c2139f536bbfd25893e682c7046a07538a5f",
+        "attempts": 1,
+        "reviewer_agents": {
+          "canon": "/root/terra_long/terra01_canon",
+          "knowledge": "/root/terra_long/terra01_knowledge",
+          "wiki": "/root/terra_long/terra01_wiki"
+        }
+      },
+      {
+        "cycle": 2,
+        "goal": "벨수 노동자와 조카, 카르드 환기갱 조직, 오르반 정비와 채무 사건 및 주장",
+        "status": "sealed_experiment",
+        "sealed_commit": "4743934ae64068de9e4143436dcae0661fca8212",
+        "attempts": 2,
+        "reviewer_agents": {
+          "canon": "/root/terra_budget/terra02_canon_retry",
+          "knowledge": "/root/terra_budget/terra02_knowledge_retry",
+          "wiki": "/root/terra_budget/terra02_wiki_retry"
+        }
+      },
+      {
+        "cycle": 3,
+        "goal": "무음림의 생활과 경계 분쟁, 가호 협상",
+        "status": "sealed_experiment",
+        "sealed_commit": "829f7a860ac5e117bfec45626717b6e51f173f01",
+        "attempts": 1,
+        "reviewer_agents": {
+          "canon": "/root/terra_budget/terra03_canon",
+          "knowledge": "/root/terra_budget/terra03_knowledge",
+          "wiki": "/root/terra_budget/terra03_wiki"
+        }
+      },
+      {
+        "cycle": 4,
+        "goal": "교역 중단, 부분 해결 및 지역사와 미해결 갈등",
+        "status": "sealed_experiment",
+        "sealed_commit": "3102fb267081b2caec172fcbde19cfddcaa71aa6",
+        "attempts": 2,
+        "reviewer_agents": {
+          "canon": "/root/terra_budget/terra04_canon_retry",
+          "knowledge": "/root/terra_budget/terra04_knowledge_retry",
+          "wiki": "/root/terra_budget/terra04_wiki_retry"
+        }
+      }
+    ],
+    "head": "3102fb267081b2caec172fcbde19cfddcaa71aa6"
+  },
+  "sol": {
+    "records": 55,
+    "articles": 55,
+    "kinds": {
+      "Monster": 3,
+      "Character": 12,
+      "Item": 4,
+      "Spirit": 3,
+      "Organization": 7,
+      "Claim": 2,
+      "Thread": 2,
+      "Rule": 5,
+      "Culture": 1,
+      "Power": 2,
+      "SacredBeast": 2,
+      "Place": 8,
+      "Event": 4
+    },
+    "article_chars": 34256,
+    "reference_edges": 141,
+    "cycles": [
+      {
+        "cycle": 1,
+        "goal": "사헬 우물 공동 정비일 Culture+장소",
+        "status": "sealed_experiment",
+        "sealed_commit": "5b0907c486d93fb7d5a25a8861c615e5c0e6adbc",
+        "attempts": 1,
+        "reviewer_agents": {
+          "canon": "/root/sol_long/sol_c01_canon",
+          "knowledge": "prior Sol lane saved independent review; agent ID unavailable after session restart",
+          "wiki": "/root/sol_tail_wiki_terra"
+        }
+      }
+    ],
+    "head": "5b0907c486d93fb7d5a25a8861c615e5c0e6adbc"
+  }
+}

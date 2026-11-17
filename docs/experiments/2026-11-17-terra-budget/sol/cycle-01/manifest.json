@@ -1,0 +1,110 @@
+{
+  "lane": "sol",
+  "cycle": 1,
+  "base_commit": "8b9a62d560104750f14e2db040b90393d559bacf",
+  "world_digest": "6a14908988ba53313dd93f14141474601d10515bae65d93c633fe37f527632eb",
+  "changed_paths": [
+    "world/indexes/Culture.md",
+    "world/indexes/Place.md",
+    "world/indexes/README.md",
+    "world/records/CUL-WELL-DAY.json",
+    "world/records/LOC-SURI-WELL.json",
+    "world/wiki/CUL-WELL-DAY.md",
+    "world/wiki/LOC-SURI-WELL.md"
+  ],
+  "votes": [
+    {
+      "role": "canon",
+      "verdict": "approve",
+      "summary": "TASK-001: CUL-WELL-DAY와 LOC-SURI-WELL 및 대응 위키·색인을 기준 커밋 8b9a62d560104750f14e2db040b90393d559bacf의 관련 정사와 대조했다. 기존 사헬의 물 사정과 수리의 교육 목표를 유지하며, 펌프 계약의 결말을 열어 둔다. 정사 충돌이나 미해결 정사 결함을 발견하지 못했다.",
+      "findings": []
+    },
+    {
+      "role": "knowledge",
+      "verdict": "approve",
+      "summary": "cycle-01 CUL-WELL-DAY·LOC-SURI-WELL의 기록·위키·색인을 기준 커밋 8b9a62d560104750f14e2db040b90393d559bacf와 대조했다. 필수 근거 LOC-SAHEL, NPC-SURI, BEA-TORTOISE, SYS-MAGIC 및 추가 참조 THR-WATER, NPC-VARKA를 git show로 조회했다. 지역 관습과 생활 공간의 새 설정은 허용된 확장이며, 물 생성·가호·펌프 계약의 결말을 확정하지 않는다. 장부의 증거 범위를 제한하고 주민의 권한·수리의 기술 판단을 구분하여 지식·추론을 과장하지 않는다. 기록 details와 위키 본문 및 색인이 일치한다. python tools/validate.py --json 결과 55 records/55 articles, errors 0; warnings 5는 변경 외 기존 문서의 키워드 경고다. 상위 실행자가 현 실험 계약에서 두 기록·위키 및 생성 색인 변경을 허용함을 확인했다. 미해결 지식 결함 없음.",
+      "findings": []
+    },
+    {
+      "role": "wiki",
+      "verdict": "approve",
+      "summary": "SOL-LONG-01의 CUL-WELL-DAY와 LOC-SURI-WELL은 실제 본문과 기록이 일치하며 문화와 장소로 적절히 분류되고 색인되어 있다. 지정 근거와 기존 관련 기록을 대조한 결과 실질적인 충돌이나 동일 실체 중복을 발견하지 못했다.",
+      "findings": []
+    }
+  ],
+  "reviewer_agents": {
+    "canon": "/root/sol_long/sol_c01_canon",
+    "knowledge": "prior Sol lane saved independent review; agent ID unavailable after session restart",
+    "wiki": "/root/sol_tail_wiki_terra"
+  },
+  "attempts": 1,
+  "static_report": {
+    "records": 55,
+    "articles": 55,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/BEA-HART.md",
+        "word": "최초"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-ASH.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-SIA.md",
+        "word": "영원"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-BLESSING.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-MAGIC.md",
+        "word": "무한"
+      }
+    ]
+  },
+  "goal": "사헬 우물 공동 정비일 Culture+장소",
+  "provenance_note": "First two saved reviews reused after cost-steering; final wiki review performed by Terra. Knowledge reviewer exact agent ID unavailable.",
+  "sealed_commit": "5b0907c486d93fb7d5a25a8861c615e5c0e6adbc",
+  "sealed_at": 1794951736.7209854,
+  "static_verified": {
+    "records": 55,
+    "articles": 55,
+    "errors": [],
+    "warnings": [
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/BEA-HART.md",
+        "word": "최초"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-ASH.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SPI-SIA.md",
+        "word": "영원"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-BLESSING.md",
+        "word": "무한"
+      },
+      {
+        "code": "KEYWORD",
+        "path": "world/wiki/SYS-MAGIC.md",
+        "word": "무한"
+      }
+    ]
+  },
+  "status": "sealed_experiment"
+}

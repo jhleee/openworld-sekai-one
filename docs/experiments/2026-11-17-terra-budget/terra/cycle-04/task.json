@@ -1,0 +1,130 @@
+{
+  "id": "cycle-04",
+  "base_commit": "829f7a860ac5e117bfec45626717b6e51f173f01",
+  "goal": "교역 중단, 부분 해결 및 지역사와 미해결 갈등",
+  "subtask_count": 3,
+  "subtasks": [
+    {
+      "id": "04-1",
+      "goal": "누적 교역 중단 사건",
+      "evidence_ids": [
+        "CUL-HUSH-BARTER",
+        "EVT-HUSH-SURVEY",
+        "EVT-TRADE-PAUSE",
+        "LOC-KARD",
+        "LOC-VELSU",
+        "LOC-VELSU-STORE",
+        "NPC-DAON",
+        "ORG-KARD-VENT"
+      ],
+      "required_paths": [
+        "world/records/EVT-TRADE-PAUSE.json",
+        "world/wiki/EVT-TRADE-PAUSE.md",
+        "world/records/THR-TRADE-PAUSE.json",
+        "world/wiki/THR-TRADE-PAUSE.md"
+      ],
+      "allowed_paths": [
+        "world/records/EVT-TRADE-PAUSE.json",
+        "world/wiki/EVT-TRADE-PAUSE.md",
+        "world/records/THR-TRADE-PAUSE.json",
+        "world/wiki/THR-TRADE-PAUSE.md"
+      ]
+    },
+    {
+      "id": "04-2",
+      "goal": "부분 해결과 기존 창고 기록 갱신",
+      "evidence_ids": [
+        "CUL-HUSH-BARTER",
+        "EVT-TRADE-PARTIAL",
+        "EVT-TRADE-PAUSE",
+        "NPC-DAON",
+        "ORG-FERRY",
+        "ORG-HUSH",
+        "ORG-KARD-VENT",
+        "THR-TRADE-PAUSE"
+      ],
+      "required_paths": [
+        "world/records/EVT-TRADE-PARTIAL.json",
+        "world/wiki/EVT-TRADE-PARTIAL.md",
+        "world/records/ORG-TRADE-TABLE.json",
+        "world/wiki/ORG-TRADE-TABLE.md",
+        "world/records/LOC-VELSU-STORE.json",
+        "world/wiki/LOC-VELSU-STORE.md"
+      ],
+      "allowed_paths": [
+        "world/records/EVT-TRADE-PARTIAL.json",
+        "world/wiki/EVT-TRADE-PARTIAL.md",
+        "world/records/ORG-TRADE-TABLE.json",
+        "world/wiki/ORG-TRADE-TABLE.md",
+        "world/records/LOC-VELSU-STORE.json",
+        "world/wiki/LOC-VELSU-STORE.md"
+      ]
+    },
+    {
+      "id": "04-3",
+      "goal": "지역 교환 종합과 미해결 갈등",
+      "evidence_ids": [
+        "CLM-HUSH-BOUNDARY",
+        "CLM-ORVAN-DEBT",
+        "CUL-HUSH-BARTER",
+        "EVT-TRADE-PARTIAL",
+        "EVT-TRADE-PAUSE",
+        "LOC-HUSH",
+        "LOC-KARD",
+        "LOC-VELSU",
+        "ORG-TRADE-TABLE",
+        "THR-TRADE-PAUSE"
+      ],
+      "required_paths": [
+        "world/records/CUL-REGIONAL-EXCHANGE.json",
+        "world/wiki/CUL-REGIONAL-EXCHANGE.md",
+        "world/records/THR-REGIONAL-COST.json",
+        "world/wiki/THR-REGIONAL-COST.md"
+      ],
+      "allowed_paths": [
+        "world/records/CUL-REGIONAL-EXCHANGE.json",
+        "world/wiki/CUL-REGIONAL-EXCHANGE.md",
+        "world/records/THR-REGIONAL-COST.json",
+        "world/wiki/THR-REGIONAL-COST.md"
+      ]
+    }
+  ],
+  "derived_paths": [
+    "world/indexes/Culture.md",
+    "world/indexes/Event.md",
+    "world/indexes/Organization.md",
+    "world/indexes/README.md",
+    "world/indexes/Thread.md",
+    "world/indexes/timeline.md"
+  ],
+  "allowed_paths": [
+    "world/records/EVT-TRADE-PAUSE.json",
+    "world/wiki/EVT-TRADE-PAUSE.md",
+    "world/records/THR-TRADE-PAUSE.json",
+    "world/wiki/THR-TRADE-PAUSE.md",
+    "world/records/EVT-TRADE-PARTIAL.json",
+    "world/wiki/EVT-TRADE-PARTIAL.md",
+    "world/records/ORG-TRADE-TABLE.json",
+    "world/wiki/ORG-TRADE-TABLE.md",
+    "world/records/LOC-VELSU-STORE.json",
+    "world/wiki/LOC-VELSU-STORE.md",
+    "world/records/CUL-REGIONAL-EXCHANGE.json",
+    "world/wiki/CUL-REGIONAL-EXCHANGE.md",
+    "world/records/THR-REGIONAL-COST.json",
+    "world/wiki/THR-REGIONAL-COST.md",
+    "world/indexes/Culture.md",
+    "world/indexes/Event.md",
+    "world/indexes/Organization.md",
+    "world/indexes/README.md",
+    "world/indexes/Thread.md",
+    "world/indexes/timeline.md"
+  ],
+  "lost_structured_constraints": [
+    {
+      "before": "EVT-TRADE-PAUSE",
+      "after": "EVT-TRADE-PARTIAL",
+      "reason": "same-year precision unsupported; prose order preserved"
+    }
+  ],
+  "future_tool_work": "동일 연도 내 사건 선후 정밀도를 표현하고 검증하는 별도 도구 개선"
+}

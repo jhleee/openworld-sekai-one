@@ -1,0 +1,19 @@
+{
+  "id": "TIME-PRECISION-001",
+  "status": "open",
+  "severity": "warning",
+  "ids": [
+    "EVT-TRADE-PAUSE",
+    "EVT-TRADE-PARTIAL"
+  ],
+  "source_branch": "experiment/terra-long",
+  "problem": "Both events occur in year312; strict numeric ordering rejects after. Constraint removed from record and retained only in prose/manifest. Timeline currently lists partial resumption before pause.",
+  "required_fix": "Separate time precision from relative order, preserve explicit DAG edges, display within-year partial order or explicitly unknown order. Do not invent exact dates.",
+  "acceptance": [
+    "same-year after edge retained without false reversal",
+    "true reversed years rejected",
+    "cycles rejected",
+    "timeline does not imply reverse narrative order",
+    "existing signed historical receipts remain immutable"
+  ]
+}
