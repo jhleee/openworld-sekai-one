@@ -71,3 +71,15 @@ class Contract(unittest.TestCase):
   with patch('agent_loop.completion',return_value={'action':'lookup','ids':['A']}):
    with self.assertRaises(ValueError):ask([],{'A':{}})
 if __name__=='__main__':unittest.main()
+
+class FieldScope(unittest.TestCase):
+ def test_metadata_patch_preserves_body(self):
+  with tempfile.TemporaryDirectory() as td:
+   root=pathlib.Path(td);p=root/'world/wiki/test.md';p.parent.mkdir(parents=True);p.write_text('---\nid: "A"\ntags: ["old"]\n---\nbody')
+   new=p.read_text().replace('["old"]','["new"]');apply_files(root,[{'path':'world/wiki/test.md','content':new}],['world/wiki/test.md'],{'world/wiki/test.md':['tags']});self.assertEqual(p.read_text(),new)
+   with self.assertRaises(ValueError):apply_files(root,[{'path':'world/wiki/test.md','content':new.replace('body','changed')}],['world/wiki/test.md'],{'world/wiki/test.md':['tags']})
+ def test_record_field_scope(self):
+  with tempfile.TemporaryDirectory() as td:
+   root=pathlib.Path(td);p=root/'world/records/test.json';p.parent.mkdir(parents=True);p.write_text('{"id":"A","name":"old"}')
+   with self.assertRaises(ValueError):apply_files(root,[{'path':'world/records/test.json','content':'{"id":"B","name":"new"}'}],['world/records/test.json'],{'world/records/test.json':['name']})
+   self.assertEqual(json.loads(p.read_text())['id'],'A')

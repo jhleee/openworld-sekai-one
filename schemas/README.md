@@ -19,3 +19,5 @@ Item: unique:true, owner/keeper Character 또는 Organization, as_of. 다른 이
 Claim: truth true/false/undecided 문자열. Belief: holder ID와 claim Claim ID. Thread: status open/resolved.
 
 검토: role canon/knowledge/wiki, verdict approve/revise/reject, findings:[severity blocker/warning,ids,reason,evidence,suggestion]. 영수증: base_commit,world_digest,votes,created_at,model,signature.
+
+작업 field_limits는 경로별 허용 메타데이터 키 목록이다. 지정하면 나머지 필드와 Markdown 본문 변경을 차단한다. 생성자가 임의로 추가하는 옵션이 아니라 운영자 작업 계약이다.
