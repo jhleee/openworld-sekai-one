@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "THR-TRADE-PAUSE",
+  "kind": "Thread",
+  "name": "세 지역 교환 지연",
+  "summary": "약초와 철의 공급 지연이 운반 노동과 장비 수선에 이어진다.",
+  "references": [
+    "EVT-TRADE-PAUSE",
+    "ORG-KARD-VENT",
+    "CUL-HUSH-BARTER",
+    "LOC-VELSU-STORE"
+  ],
+  "status": "open",
+  "details": [
+    {
+      "heading": "지연의 연결",
+      "text": "환기 점검으로 철 출하가 늦어지고 숲 경계 협상으로 약초 교환량이 줄어 벨수의 예정된 항차가 미뤄졌다. 서로 다른 공급 사정이 한 운반 일정에 겹쳤을 뿐 세 지역이 하나의 조직에 속한 것은 아니다."
+    },
+    {
+      "heading": "미해결 비용",
+      "text": "누가 기다린 노동과 줄 교체 비용을 부담할지 정해지지 않았다. 임시분담장부에 손실을 적더라도 지급이 보장되지는 않는다. 환기 수선과 숲의 경계 합의는 각각의 당사자가 결정해야 한다."
+    }
+  ]
+}

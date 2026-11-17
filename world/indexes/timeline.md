@@ -6,5 +6,7 @@
 - 309년: [검은 눈 고개 전투](../wiki/EVT-PASS.md)
 - 311년: [접힌 성벽의 경첩 정비](../wiki/EVT-ORVAN-REPAIR.md)
 - 312년: [숲가의 임시 재측량](../wiki/EVT-HUSH-SURVEY.md)
+- 312년: [남은 물품의 임시 교환](../wiki/EVT-TRADE-PARTIAL.md)
+- 312년: [초여름 교역 중단](../wiki/EVT-TRADE-PAUSE.md)
 
 범위 사건과 미정 시점은 정확한 연도로 환산하지 않는다.
