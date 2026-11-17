@@ -1,0 +1,24 @@
+{
+  "id": "TASK-002",
+  "status": "ready",
+  "goal": "벨수 장례와 잔향 처리의 독립 문서를 작성한다. 기존 규칙과 지리를 유지한다.",
+  "allowed_paths": [
+    "world/records/LOC-FUNERAL.json",
+    "world/wiki/LOC-FUNERAL.md"
+  ],
+  "required_paths": [
+    "world/records/LOC-FUNERAL.json",
+    "world/wiki/LOC-FUNERAL.md"
+  ],
+  "evidence_ids": [
+    "LOC-VELSU",
+    "NPC-ENA",
+    "SYS-DEATH"
+  ],
+  "acceptance": [
+    "실제 본문과 근거",
+    "기존 규칙 유지",
+    "검토 영수증",
+    "정사 반영 확인"
+  ]
+}

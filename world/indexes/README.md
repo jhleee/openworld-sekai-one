@@ -1,0 +1,15 @@
+# 분류 색인
+
+- [Character (12)](Character.md)
+- [Claim (2)](Claim.md)
+- [Event (4)](Event.md)
+- [Item (4)](Item.md)
+- [Monster (3)](Monster.md)
+- [Organization (7)](Organization.md)
+- [Place (7)](Place.md)
+- [Power (2)](Power.md)
+- [Rule (5)](Rule.md)
+- [SacredBeast (2)](SacredBeast.md)
+- [Spirit (3)](Spirit.md)
+- [Thread (2)](Thread.md)
+- [연표](timeline.md)

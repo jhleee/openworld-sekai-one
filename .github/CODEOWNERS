@@ -1,0 +1,7 @@
+# Effective only when GitHub required owner reviews are configured.
+/AGENTS.md @jhleee
+/.agents/ @jhleee
+/tools/ @jhleee
+/schemas/ @jhleee
+/.github/ @jhleee
+/world/constitution.md @jhleee

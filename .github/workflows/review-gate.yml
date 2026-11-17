@@ -1,0 +1,32 @@
+name: Trusted review gate
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened]
+permissions:
+  contents: read
+jobs:
+  consensus:
+    runs-on: ubuntu-latest
+    steps:
+      # Only trusted base code runs with the secret. Candidate files are data.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          path: trusted
+          persist-credentials: false
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          path: candidate
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Validate candidate with base validator
+        run: python trusted/tools/validate.py --root candidate
+      - name: Authenticate content-bound consensus
+        env:
+          REVIEW_SIGNING_KEY: ${{ secrets.REVIEW_SIGNING_KEY }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+        run: python trusted/tools/review_gate.py --root candidate --base "$BASE_SHA"
