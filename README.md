@@ -6,6 +6,10 @@
 
 현재 정사는 **75문서**다. [실험 통합 검증](docs/experiments/merge-2026-11-18/README.md)을 거쳐 두 확장 브랜치를 병합했다.
 
+## 오프라인으로 읽기
+
+[위키 뷰어 HTML](viewer/arken-wiki.html)을 다운로드한 뒤 브라우저로 열면 서버 없이 읽을 수 있다. GitHub에서는 **Download raw file**을 선택한다. 검색·분류·목차·연표·관련 문서를 제공한다. [사용 및 재생성 방법](viewer/README.md)
+
 ## 먼저 읽을 문서
 
 - [아르켄 대륙](world/wiki/LOC-ARKEN.md): 지리·정치·생활

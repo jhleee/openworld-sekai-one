@@ -14,4 +14,5 @@ jobs:
           python-version: '3.12'
       - run: python tools/validate.py
       - run: python tools/index.py --check
+      - run: python tools/build_viewer.py --check
       - run: python -m unittest discover -s tests -v
