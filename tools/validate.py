@@ -70,7 +70,7 @@ def check(root=ROOT):
     if ref not in events:err('EVENT_ORDER',root/'world/records'/f'{rid}.json','missing event '+str(ref));continue
     a,b=(ref,rid) if field=='after' else (rid,ref)
     if b not in edges[a]:edges[a].add(b);degree[b]+=1
-    if type(events[a].get('time')) is int and type(events[b].get('time')) is int and events[a]['time']>=events[b]['time']:err('EVENT_ORDER',root/'world/records'/f'{rid}.json','strict before requires earlier time')
+    if type(events[a].get('time')) is int and type(events[b].get('time')) is int and events[a]['time']>events[b]['time']:err('EVENT_ORDER',root/'world/records'/f'{rid}.json','declared order contradicts recorded year')
  queue=[k for k,d in degree.items() if d==0];visited=0
  while queue:
   a=queue.pop();visited+=1

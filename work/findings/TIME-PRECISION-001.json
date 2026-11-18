@@ -1,6 +1,6 @@
 {
   "id": "TIME-PRECISION-001",
-  "status": "open",
+  "status": "resolved",
   "severity": "warning",
   "ids": [
     "EVT-TRADE-PAUSE",
@@ -15,5 +15,6 @@
     "cycles rejected",
     "timeline does not imply reverse narrative order",
     "existing signed historical receipts remain immutable"
-  ]
+  ],
+  "resolution": "Annual equality allows explicit DAG order; restored after edge, year contradiction and cycles still rejected; timeline labels only declared within-year order."
 }

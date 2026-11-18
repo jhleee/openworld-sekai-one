@@ -1,67 +1,37 @@
 {
-  "task": "LONG-terra-04",
-  "base_commit": "829f7a860ac5e117bfec45626717b6e51f173f01",
-  "world_digest": "b922b95b12c0cd7bd34f28a1b13e51bb8f273ce870703a3857a6d64200bde3dd",
+  "task": "MERGE-20261118",
+  "base_commit": "dfa4e48642e9fda76533018e8e6839915010a015",
+  "world_digest": "78008124785d5a797ed9b16a187de43dac0830b3e63e4f08ad442e0a4951f4ae",
   "votes": [
     {
       "role": "canon",
       "verdict": "approve",
-      "summary": "cycle-04의 사건, 생계 비용과 미해결 상태는 근거 기록에 부합한다. 동일 연도 선후는 본문에 보존되나 구조 검증과 연표 표현에 한계가 있다.",
-      "findings": [
-        {
-          "severity": "warning",
-          "ids": [
-            "EVT-TRADE-PAUSE",
-            "EVT-TRADE-PARTIAL"
-          ],
-          "reason": "두 사건의 실제 선후가 연표의 나열 순서와 반대이며, 동일 연도 사건 간 순서가 구조적으로 검증되지 않는다.",
-          "evidence": "EVT-TRADE-PARTIAL의 제한된 운반은 “지연 뒤” 일어나지만 world/indexes/timeline.md는 312년 부분 교환을 중단보다 먼저 나열한다. tools/validate.py:73은 after/before에 엄격한 연도 차이를 요구하므로 두 312년 사건에 해당 제약을 넣으면 오류가 난다.",
-          "suggestion": "후속 도구 개선에서 같은 연도 내 선후를 검증하고 연표에 반영하라. 그전에는 연표의 같은 연도 나열 순서가 사건 선후를 의미하지 않는다는 점을 표시하라."
-        }
-      ]
+      "summary": "기준 정전과 신규 기록의 지역 생계·관계·가호 비용·사건 연도를 선택 대조했다. 312년 동일연도 선후 허용은 연도 정밀도와 부합하며 역순 및 순환 검사는 유지된다. 검증 결과 75 records, 75 articles, errors 0, warnings 6. 정전 차단 사유는 발견하지 않았다. 연표 선후 설명을 최상위 항목으로 변경해 표시 경고를 해결했고 색인 일치 검사를 통과했다.",
+      "findings": [],
+      "world_digest": "78008124785d5a797ed9b16a187de43dac0830b3e63e4f08ad442e0a4951f4ae"
     },
     {
       "role": "knowledge",
       "verdict": "approve",
-      "summary": "cycle-04의 사건과 미확정 주장은 근거와 일치하며 부분 해결 뒤에도 비용과 경계 갈등을 남긴다. 동일 연도 사건 선후는 본문에 보존되지만 자동 검증과 연표 표시에는 한계가 있다.",
-      "findings": [
-        {
-          "severity": "warning",
-          "ids": [
-            "EVT-TRADE-PAUSE",
-            "EVT-TRADE-PARTIAL"
-          ],
-          "reason": "두 사건은 모두 312년이고 선후 관계가 구조화되지 않아 검증기가 본문의 순서를 보장하지 못하며, 연표는 부분 교환을 중단보다 먼저 나열한다. 작업 계약에 명시된 기존 도구의 한계이므로 이번 세계 기록 변경의 차단 사유는 아니다.",
-          "evidence": "EVT-TRADE-PARTIAL의 제한된 운반은 '지연 뒤'라고 명시한다. tools/validate.py는 after/before에 앞 사건 연도가 반드시 작아야 한다고 검사하며, world/indexes/timeline.md는 같은 312년의 PARTIAL을 PAUSE보다 먼저 표시한다.",
-          "suggestion": "별도 도구 개선에서 동일 연도 선후를 표현하고 검증하며 연표에도 그 순서를 반영한다. 그때까지 본문의 선후 표현을 유지한다."
-        }
-      ]
+      "summary": "헌장과 기존 기록에 비추어 주장·가호 협상·단체 권한·미정 상태 및 사헬 문서와 지역 교역 인과를 선택 대조했다. 실질적 지식 충돌은 발견하지 못했다.",
+      "findings": [],
+      "world_digest": "78008124785d5a797ed9b16a187de43dac0830b3e63e4f08ad442e0a4951f4ae"
     },
     {
       "role": "wiki",
       "verdict": "approve",
-      "summary": "신규 위키 본문과 창고 갱신은 기록 및 관련 근거와 부합하며, 중단 뒤 부분 교환이라는 선후를 본문에 보존한다. 다만 같은 해 사건의 선후는 자동 검증되지 않고 연표의 표시 순서도 실제 선후와 반대다.",
-      "findings": [
-        {
-          "severity": "warning",
-          "ids": [
-            "EVT-TRADE-PAUSE",
-            "EVT-TRADE-PARTIAL"
-          ],
-          "reason": "동일 연도 사건의 순서를 기계적으로 보장하지 못하며 연표 독자에게 실제 순서를 잘못 암시할 수 있다.",
-          "evidence": "EVT-TRADE-PARTIAL의 제한된 운반은 지연 뒤라고 명시하지만 world/indexes/timeline.md는 312년 부분 교환을 중단보다 먼저 나열한다. tools/validate.py는 after/before 관계에 엄격히 더 이른 정수 연도를 요구하고 tools/index.py는 연도만 정렬한다.",
-          "suggestion": "현재 본문의 선후 기술을 보존하고, 예정된 별도 도구 개선에서 동일 연도 선후를 구조화해 검증하며 연표가 이를 반영하도록 한다."
-        }
-      ]
+      "summary": "75개 기록·위키의 본문 근거, 분류, 색인 링크와 312년 부분순서를 확인했다. 중복 실체나 차단 결함을 발견하지 못했다. index --check 및 validate 통과(검증 경고 6건).",
+      "findings": [],
+      "world_digest": "78008124785d5a797ed9b16a187de43dac0830b3e63e4f08ad442e0a4951f4ae"
     }
   ],
-  "created_at": 1794952643.552044,
-  "model": "terra with independent Terra/Sol council",
   "reviewer_agents": {
-    "canon": "/root/terra_budget/terra04_canon_retry",
-    "knowledge": "/root/terra_budget/terra04_knowledge_retry",
-    "wiki": "/root/terra_budget/terra04_wiki_retry"
+    "canon": "/root/merge_canon",
+    "knowledge": "/root/merge_knowledge",
+    "wiki": "/root/merge_wiki"
   },
-  "signature_source": "root operator after real subagent reviews",
-  "signature": "ab2c1f83d4087bee3c5d4b65f1da338f497d376fce25bb7a8547d39f2b9a1a32"
+  "created_at": 1794990898.0474093,
+  "model": "gpt-6.1-terra",
+  "scope": "Integration of reviewed Terra and Sol branches; maintainer-reviewed time precision fix",
+  "signature": "ff3b5957f223c13ce83234c676fa9a622c051aaeb1173f9747059d26270310d2"
 }

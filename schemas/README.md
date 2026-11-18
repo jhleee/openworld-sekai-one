@@ -23,3 +23,5 @@ Claim: truth true/false/undecided 문자열. Belief: holder ID와 claim Claim ID
 작업 field_limits는 경로별 허용 메타데이터 키 목록이다. 지정하면 나머지 필드와 Markdown 본문 변경을 차단한다. 생성자가 임의로 추가하는 옵션이 아니라 운영자 작업 계약이다.
 
 Culture는 장소와 구별하는 반복 관습·생활 문화다. 작업 expected_kinds는 ID별 요구 유형이며 본문이 있어도 유형이 다르면 재작성한다.
+
+연도는 시간의 정밀도다. 같은 연도의 Event는 명시 after/before로 선후를 추가할 수 있다. 수치 연도가 반대이면 오류이며 동일연도 순환도 차단한다. 연표는 같은 해의 명시 선후를 정렬하고 무관한 사건의 선후를 단정하지 않는다.

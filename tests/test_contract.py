@@ -94,3 +94,19 @@ class TaskRequirements(unittest.TestCase):
  def test_required_article(self):
   from agent_loop import task_errors
   with tempfile.TemporaryDirectory() as td:self.assertTrue(task_errors({'required_paths':['world/wiki/CUL-X.md']},pathlib.Path(td)))
+
+class AnnualOrdering(unittest.TestCase):
+ setUp=Contract.setUp
+ tearDown=Contract.tearDown
+ modify=Contract.modify
+ codes=Contract.codes
+ def test_same_year_explicit_order_is_valid(self):
+  self.modify('EVT-FLOOD',time=309,before=['EVT-PASS']);self.assertNotIn('EVENT_ORDER',self.codes())
+ def test_same_year_cycle_rejected(self):
+  self.modify('EVT-FLOOD',time=309,before=['EVT-PASS']);self.modify('EVT-PASS',before=['EVT-FLOOD']);self.assertIn('EVENT_CYCLE',self.codes())
+ def test_timeline_preserves_declared_within_year_order(self):
+  from index import generate
+  self.modify('EVT-FLOOD',time=309,after=['EVT-PASS']);generate(self.root)
+  text=(self.root/'world/indexes/timeline.md').read_text()
+  self.assertLess(text.index('검은 눈 고개 전투'),text.index('푸른 제방의 밤'))
+  self.assertIn('명시된 선후: 검은 눈 고개 전투 → 푸른 제방의 밤',text)

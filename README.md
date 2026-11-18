@@ -4,6 +4,8 @@
 
 **[세계 개요](world/overview.md) · [분류별 위키](world/indexes/README.md) · [연표](world/indexes/timeline.md) · [세계 헌장](world/constitution.md)**
 
+현재 정사는 **75문서**다. [실험 통합 검증](docs/experiments/merge-2026-11-18/README.md)을 거쳐 두 확장 브랜치를 병합했다.
+
 ## 먼저 읽을 문서
 
 - [아르켄 대륙](world/wiki/LOC-ARKEN.md): 지리·정치·생활

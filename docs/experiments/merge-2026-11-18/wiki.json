@@ -1,0 +1,7 @@
+{
+  "role": "wiki",
+  "verdict": "approve",
+  "summary": "75개 기록·위키의 본문 근거, 분류, 색인 링크와 312년 부분순서를 확인했다. 중복 실체나 차단 결함을 발견하지 못했다. index --check 및 validate 통과(검증 경고 6건).",
+  "findings": [],
+  "world_digest": "78008124785d5a797ed9b16a187de43dac0830b3e63e4f08ad442e0a4951f4ae"
+}
