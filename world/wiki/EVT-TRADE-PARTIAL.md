@@ -1,0 +1,28 @@
+---
+id: "ART-EVT-TRADE-PARTIAL"
+record: "EVT-TRADE-PARTIAL"
+name: "남은 물품의 임시 교환"
+category: "Event"
+tags: ["Event", "남은 물품의 임시 교환"]
+references: ["EVT-TRADE-PARTIAL", "EVT-TRADE-PAUSE", "THR-TRADE-PAUSE", "NPC-DAON", "CUL-HUSH-BARTER", "ORG-KARD-VENT"]
+---
+
+# 남은 물품의 임시 교환
+
+312년 세 지역의 운반자들이 남은 물량 일부를 먼저 교환했다.
+
+## 제한된 운반
+
+지연 뒤 운반자들은 이미 안전하게 출하된 소량의 철 부속과 동의를 얻어 채취해 말린 약초를 한 차례 먼저 운반하기로 했다. 벨수에서는 다온과 동료들이 부속 하나를 닳은 줄의 고정구 교체에 썼다. 배와 인력은 한정되어 남은 주문은 다음 운반일을 기다린다.
+
+## 남는 대가
+
+참여자들은 이번 운반의 품삯과 물품을 각자 확인해 적었지만 이전 대기 시간의 보상에는 합의하지 못했다. 환기갱의 위험 구간은 여전히 점검과 수선이 필요하고 숲의 경계와 채취량도 최종 합의 전이다. 소량 교환은 생계 손실 전체를 지우지 못한다.
+
+## 관련 문서
+
+- [EVT-TRADE-PAUSE](EVT-TRADE-PAUSE.md)
+- [THR-TRADE-PAUSE](THR-TRADE-PAUSE.md)
+- [NPC-DAON](NPC-DAON.md)
+- [CUL-HUSH-BARTER](CUL-HUSH-BARTER.md)
+- [ORG-KARD-VENT](ORG-KARD-VENT.md)
